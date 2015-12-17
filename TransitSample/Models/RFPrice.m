@@ -25,7 +25,7 @@
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     [formatter setMaximumFractionDigits:2];
     
-    return [formatter stringFromNumber:self.amount];
+    return [formatter stringFromNumber:@([self.amount floatValue]/100)];
 }
 
 @end
