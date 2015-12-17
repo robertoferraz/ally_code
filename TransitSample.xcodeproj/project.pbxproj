@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		289404777F5619230C04A91C /* libPods-TransitSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF0C7600205B588FB0431F1 /* libPods-TransitSample.a */; };
+		B93D6EEE1C1DBEB10077D40C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6EED1C1DBEB10077D40C /* main.m */; };
+		B93D6EF11C1DBEB10077D40C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6EF01C1DBEB10077D40C /* AppDelegate.m */; };
+		B93D6EFA1C1DBEB10077D40C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93D6EF81C1DBEB10077D40C /* Main.storyboard */; };
+		B93D6EFC1C1DBEB10077D40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93D6EFB1C1DBEB10077D40C /* Assets.xcassets */; };
+		B93D6EFF1C1DBEB10077D40C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93D6EFD1C1DBEB10077D40C /* LaunchScreen.storyboard */; };
+		B93D6F0A1C1DBEB10077D40C /* TransitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F091C1DBEB10077D40C /* TransitSampleTests.m */; };
+		B93D6F151C1DBEB10077D40C /* TransitSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F141C1DBEB10077D40C /* TransitSampleUITests.m */; };
+		B93D6F301C1DC0C60077D40C /* RFStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F2F1C1DC0C60077D40C /* RFStartViewController.m */; };
+		B93D6F331C1DC1740077D40C /* RFTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F321C1DC1740077D40C /* RFTransport.m */; };
+		B93D6F361C1DC1A00077D40C /* RFProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F351C1DC1A00077D40C /* RFProvider.m */; };
+		B93D6F391C1DC23A0077D40C /* RFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F381C1DC23A0077D40C /* RFRoute.m */; };
+		B93D6F3C1C1DC6260077D40C /* RFSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F3B1C1DC6260077D40C /* RFSegment.m */; };
+		B93D6F3F1C1DC9040077D40C /* RFPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F3E1C1DC9040077D40C /* RFPrice.m */; };
+		B93D6F421C1DC9CC0077D40C /* RFStop.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F411C1DC9CC0077D40C /* RFStop.m */; };
+		B93D6F451C1DD0AF0077D40C /* RFProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F441C1DD0AF0077D40C /* RFProperty.m */; };
+		B93D6F481C1DD1A70077D40C /* RFCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F471C1DD1A70077D40C /* RFCompany.m */; };
+		B93D6F4A1C1DD24C0077D40C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B93D6F491C1DD24C0077D40C /* data.json */; };
+		B93D6F4D1C1DD8770077D40C /* RFTransportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F4C1C1DD8770077D40C /* RFTransportManager.m */; };
+		B93D6F521C1DD9980077D40C /* RFTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F511C1DD9980077D40C /* RFTrip.m */; };
+		B93D6F551C1DDA020077D40C /* RFTrip+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D6F541C1DDA020077D40C /* RFTrip+Routes.m */; };
+		B973C6A41C1F2273006B15CA /* RFProviderAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C6A31C1F2273006B15CA /* RFProviderAttribute.m */; };
+		B973C6E51C1F39CE006B15CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6E41C1F39CE006B15CA /* MapKit.framework */; };
+		B973C6E81C20115D006B15CA /* NSString+PolylineDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C6E71C20115D006B15CA /* NSString+PolylineDecoding.m */; };
+		B973C6EA1C201463006B15CA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6E91C201463006B15CA /* CoreText.framework */; };
+		B973C6EC1C201468006B15CA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6EB1C201468006B15CA /* CoreImage.framework */; };
+		B973C6EE1C201470006B15CA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6ED1C201470006B15CA /* libxml2.tbd */; };
+		B973C6F01C201476006B15CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6EF1C201476006B15CA /* QuartzCore.framework */; };
+		B973C6F21C20147B006B15CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6F11C20147B006B15CA /* CoreGraphics.framework */; };
+		B973C6F41C201481006B15CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B973C6F31C201481006B15CA /* UIKit.framework */; };
+		B973C6F91C2018B3006B15CA /* RFMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C6F81C2018B3006B15CA /* RFMapView.m */; };
+		B973C6FC1C201D45006B15CA /* RFPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C6FB1C201D45006B15CA /* RFPolyline.m */; };
+		B973C6FF1C20237F006B15CA /* RFSegment+Polyline.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C6FE1C20237F006B15CA /* RFSegment+Polyline.m */; };
+		B973C7021C204CB0006B15CA /* RFMapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C7011C204CB0006B15CA /* RFMapDetailViewController.m */; };
+		B973C7051C206196006B15CA /* RFRouteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C7041C206196006B15CA /* RFRouteCell.m */; };
+		B973C70B1C206659006B15CA /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = B973C70A1C206659006B15CA /* NSString+Date.m */; };
+		B9ADC1F41C22FFDA00BC639A /* NSDate+String.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ADC1F31C22FFDA00BC639A /* NSDate+String.m */; };
+		B9ADC1F91C23016F00BC639A /* RFRoutesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ADC1F81C23016F00BC639A /* RFRoutesDataSource.m */; };
+		B9ADC2011C230B7600BC639A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ADC2001C230B7600BC639A /* UIView+Constraints.m */; };
+		B9ADC2071C230DAD00BC639A /* RFTripHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ADC2061C230DAD00BC639A /* RFTripHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B93D6F061C1DBEB10077D40C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B93D6EE11C1DBEB10077D40C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B93D6EE81C1DBEB10077D40C;
+			remoteInfo = TransitSample;
+		};
+		B93D6F111C1DBEB10077D40C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B93D6EE11C1DBEB10077D40C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B93D6EE81C1DBEB10077D40C;
+			remoteInfo = TransitSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF0C7600205B588FB0431F1 /* libPods-TransitSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransitSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5E34C7993641AC3F94057C /* Pods-TransitSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransitSample/Pods-TransitSample.release.xcconfig"; sourceTree = "<group>"; };
+		A5E2A845BB2CAD680206B94C /* Pods-TransitSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitSample/Pods-TransitSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B93D6EE91C1DBEB10077D40C /* TransitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93D6EED1C1DBEB10077D40C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B93D6EEF1C1DBEB10077D40C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B93D6EF01C1DBEB10077D40C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B93D6EF91C1DBEB10077D40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B93D6EFB1C1DBEB10077D40C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B93D6EFE1C1DBEB10077D40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B93D6F001C1DBEB10077D40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93D6F051C1DBEB10077D40C /* TransitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93D6F091C1DBEB10077D40C /* TransitSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitSampleTests.m; sourceTree = "<group>"; };
+		B93D6F0B1C1DBEB10077D40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93D6F101C1DBEB10077D40C /* TransitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93D6F141C1DBEB10077D40C /* TransitSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitSampleUITests.m; sourceTree = "<group>"; };
+		B93D6F161C1DBEB10077D40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93D6F2E1C1DC0C60077D40C /* RFStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStartViewController.h; sourceTree = "<group>"; };
+		B93D6F2F1C1DC0C60077D40C /* RFStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStartViewController.m; sourceTree = "<group>"; };
+		B93D6F311C1DC1740077D40C /* RFTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTransport.h; sourceTree = "<group>"; };
+		B93D6F321C1DC1740077D40C /* RFTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTransport.m; sourceTree = "<group>"; };
+		B93D6F341C1DC1A00077D40C /* RFProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProvider.h; sourceTree = "<group>"; };
+		B93D6F351C1DC1A00077D40C /* RFProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProvider.m; sourceTree = "<group>"; };
+		B93D6F371C1DC23A0077D40C /* RFRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRoute.h; sourceTree = "<group>"; };
+		B93D6F381C1DC23A0077D40C /* RFRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRoute.m; sourceTree = "<group>"; };
+		B93D6F3A1C1DC6260077D40C /* RFSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegment.h; sourceTree = "<group>"; };
+		B93D6F3B1C1DC6260077D40C /* RFSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegment.m; sourceTree = "<group>"; };
+		B93D6F3D1C1DC9040077D40C /* RFPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPrice.h; sourceTree = "<group>"; };
+		B93D6F3E1C1DC9040077D40C /* RFPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPrice.m; sourceTree = "<group>"; };
+		B93D6F401C1DC9CC0077D40C /* RFStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStop.h; sourceTree = "<group>"; };
+		B93D6F411C1DC9CC0077D40C /* RFStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStop.m; sourceTree = "<group>"; };
+		B93D6F431C1DD0AF0077D40C /* RFProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProperty.h; sourceTree = "<group>"; };
+		B93D6F441C1DD0AF0077D40C /* RFProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProperty.m; sourceTree = "<group>"; };
+		B93D6F461C1DD1A70077D40C /* RFCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCompany.h; sourceTree = "<group>"; };
+		B93D6F471C1DD1A70077D40C /* RFCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCompany.m; sourceTree = "<group>"; };
+		B93D6F491C1DD24C0077D40C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../../../../../Downloads/transit-app-task-master/data.json"; sourceTree = "<group>"; };
+		B93D6F4B1C1DD8770077D40C /* RFTransportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTransportManager.h; sourceTree = "<group>"; };
+		B93D6F4C1C1DD8770077D40C /* RFTransportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTransportManager.m; sourceTree = "<group>"; };
+		B93D6F501C1DD9980077D40C /* RFTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTrip.h; sourceTree = "<group>"; };
+		B93D6F511C1DD9980077D40C /* RFTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTrip.m; sourceTree = "<group>"; };
+		B93D6F531C1DDA020077D40C /* RFTrip+Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFTrip+Routes.h"; sourceTree = "<group>"; };
+		B93D6F541C1DDA020077D40C /* RFTrip+Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RFTrip+Routes.m"; sourceTree = "<group>"; };
+		B973C6A21C1F2273006B15CA /* RFProviderAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProviderAttribute.h; sourceTree = "<group>"; };
+		B973C6A31C1F2273006B15CA /* RFProviderAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProviderAttribute.m; sourceTree = "<group>"; };
+		B973C6E41C1F39CE006B15CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B973C6E61C20115D006B15CA /* NSString+PolylineDecoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PolylineDecoding.h"; sourceTree = "<group>"; };
+		B973C6E71C20115D006B15CA /* NSString+PolylineDecoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PolylineDecoding.m"; sourceTree = "<group>"; };
+		B973C6E91C201463006B15CA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B973C6EB1C201468006B15CA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B973C6ED1C201470006B15CA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		B973C6EF1C201476006B15CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B973C6F11C20147B006B15CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B973C6F31C201481006B15CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B973C6F71C2018B3006B15CA /* RFMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMapView.h; sourceTree = "<group>"; };
+		B973C6F81C2018B3006B15CA /* RFMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMapView.m; sourceTree = "<group>"; };
+		B973C6FA1C201D45006B15CA /* RFPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPolyline.h; sourceTree = "<group>"; };
+		B973C6FB1C201D45006B15CA /* RFPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPolyline.m; sourceTree = "<group>"; };
+		B973C6FD1C20237F006B15CA /* RFSegment+Polyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFSegment+Polyline.h"; sourceTree = "<group>"; };
+		B973C6FE1C20237F006B15CA /* RFSegment+Polyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RFSegment+Polyline.m"; sourceTree = "<group>"; };
+		B973C7001C204CB0006B15CA /* RFMapDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMapDetailViewController.h; sourceTree = "<group>"; };
+		B973C7011C204CB0006B15CA /* RFMapDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMapDetailViewController.m; sourceTree = "<group>"; };
+		B973C7031C206196006B15CA /* RFRouteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRouteCell.h; sourceTree = "<group>"; };
+		B973C7041C206196006B15CA /* RFRouteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRouteCell.m; sourceTree = "<group>"; };
+		B973C7091C206659006B15CA /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		B973C70A1C206659006B15CA /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		B9ADC1F21C22FFDA00BC639A /* NSDate+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+String.h"; sourceTree = "<group>"; };
+		B9ADC1F31C22FFDA00BC639A /* NSDate+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+String.m"; sourceTree = "<group>"; };
+		B9ADC1F71C23016F00BC639A /* RFRoutesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRoutesDataSource.h; sourceTree = "<group>"; };
+		B9ADC1F81C23016F00BC639A /* RFRoutesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRoutesDataSource.m; sourceTree = "<group>"; };
+		B9ADC1FF1C230B7600BC639A /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		B9ADC2001C230B7600BC639A /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		B9ADC2051C230DAD00BC639A /* RFTripHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTripHandler.h; sourceTree = "<group>"; };
+		B9ADC2061C230DAD00BC639A /* RFTripHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTripHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B93D6EE61C1DBEB10077D40C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B973C6F41C201481006B15CA /* UIKit.framework in Frameworks */,
+				B973C6F21C20147B006B15CA /* CoreGraphics.framework in Frameworks */,
+				B973C6F01C201476006B15CA /* QuartzCore.framework in Frameworks */,
+				B973C6EE1C201470006B15CA /* libxml2.tbd in Frameworks */,
+				B973C6EC1C201468006B15CA /* CoreImage.framework in Frameworks */,
+				B973C6EA1C201463006B15CA /* CoreText.framework in Frameworks */,
+				B973C6E51C1F39CE006B15CA /* MapKit.framework in Frameworks */,
+				289404777F5619230C04A91C /* libPods-TransitSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F021C1DBEB10077D40C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F0D1C1DBEB10077D40C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		850CAECE0EB5533CD637EAEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2A845BB2CAD680206B94C /* Pods-TransitSample.debug.xcconfig */,
+				7C5E34C7993641AC3F94057C /* Pods-TransitSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B93D6EE01C1DBEB10077D40C = {
+			isa = PBXGroup;
+			children = (
+				B93D6EEB1C1DBEB10077D40C /* TransitSample */,
+				B93D6F081C1DBEB10077D40C /* TransitSampleTests */,
+				B93D6F131C1DBEB10077D40C /* TransitSampleUITests */,
+				B93D6EEA1C1DBEB10077D40C /* Products */,
+				850CAECE0EB5533CD637EAEA /* Pods */,
+				DB8A9D1F5EF2E25D656EBD2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B93D6EEA1C1DBEB10077D40C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6EE91C1DBEB10077D40C /* TransitSample.app */,
+				B93D6F051C1DBEB10077D40C /* TransitSampleTests.xctest */,
+				B93D6F101C1DBEB10077D40C /* TransitSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B93D6EEB1C1DBEB10077D40C /* TransitSample */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F221C1DBF270077D40C /* CustomViews */,
+				B93D6F231C1DBF270077D40C /* Handlers */,
+				B93D6F241C1DBF270077D40C /* DataSources */,
+				B93D6F251C1DBF270077D40C /* Categories */,
+				B93D6F261C1DBF270077D40C /* Cells */,
+				B93D6F271C1DBF270077D40C /* CellModels */,
+				B93D6F281C1DBF270077D40C /* Models */,
+				B93D6F291C1DBF270077D40C /* Managers */,
+				B93D6F2A1C1DBF270077D40C /* ViewControllers */,
+				B93D6EEF1C1DBEB10077D40C /* AppDelegate.h */,
+				B93D6EF01C1DBEB10077D40C /* AppDelegate.m */,
+				B93D6EF81C1DBEB10077D40C /* Main.storyboard */,
+				B93D6EFB1C1DBEB10077D40C /* Assets.xcassets */,
+				B93D6EFD1C1DBEB10077D40C /* LaunchScreen.storyboard */,
+				B93D6F001C1DBEB10077D40C /* Info.plist */,
+				B93D6EEC1C1DBEB10077D40C /* Supporting Files */,
+			);
+			path = TransitSample;
+			sourceTree = "<group>";
+		};
+		B93D6EEC1C1DBEB10077D40C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F491C1DD24C0077D40C /* data.json */,
+				B93D6EED1C1DBEB10077D40C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B93D6F081C1DBEB10077D40C /* TransitSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F091C1DBEB10077D40C /* TransitSampleTests.m */,
+				B93D6F0B1C1DBEB10077D40C /* Info.plist */,
+			);
+			path = TransitSampleTests;
+			sourceTree = "<group>";
+		};
+		B93D6F131C1DBEB10077D40C /* TransitSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F141C1DBEB10077D40C /* TransitSampleUITests.m */,
+				B93D6F161C1DBEB10077D40C /* Info.plist */,
+			);
+			path = TransitSampleUITests;
+			sourceTree = "<group>";
+		};
+		B93D6F221C1DBF270077D40C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B973C6F71C2018B3006B15CA /* RFMapView.h */,
+				B973C6F81C2018B3006B15CA /* RFMapView.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B93D6F231C1DBF270077D40C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				B9ADC2051C230DAD00BC639A /* RFTripHandler.h */,
+				B9ADC2061C230DAD00BC639A /* RFTripHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		B93D6F241C1DBF270077D40C /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				B9ADC1F71C23016F00BC639A /* RFRoutesDataSource.h */,
+				B9ADC1F81C23016F00BC639A /* RFRoutesDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		B93D6F251C1DBF270077D40C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F531C1DDA020077D40C /* RFTrip+Routes.h */,
+				B93D6F541C1DDA020077D40C /* RFTrip+Routes.m */,
+				B973C6FD1C20237F006B15CA /* RFSegment+Polyline.h */,
+				B973C6FE1C20237F006B15CA /* RFSegment+Polyline.m */,
+				B973C6E61C20115D006B15CA /* NSString+PolylineDecoding.h */,
+				B973C6E71C20115D006B15CA /* NSString+PolylineDecoding.m */,
+				B973C7091C206659006B15CA /* NSString+Date.h */,
+				B973C70A1C206659006B15CA /* NSString+Date.m */,
+				B9ADC1F21C22FFDA00BC639A /* NSDate+String.h */,
+				B9ADC1F31C22FFDA00BC639A /* NSDate+String.m */,
+				B9ADC1FF1C230B7600BC639A /* UIView+Constraints.h */,
+				B9ADC2001C230B7600BC639A /* UIView+Constraints.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B93D6F261C1DBF270077D40C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B973C7031C206196006B15CA /* RFRouteCell.h */,
+				B973C7041C206196006B15CA /* RFRouteCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B93D6F271C1DBF270077D40C /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		B93D6F281C1DBF270077D40C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F501C1DD9980077D40C /* RFTrip.h */,
+				B93D6F511C1DD9980077D40C /* RFTrip.m */,
+				B93D6F311C1DC1740077D40C /* RFTransport.h */,
+				B93D6F321C1DC1740077D40C /* RFTransport.m */,
+				B973C6A21C1F2273006B15CA /* RFProviderAttribute.h */,
+				B973C6A31C1F2273006B15CA /* RFProviderAttribute.m */,
+				B93D6F341C1DC1A00077D40C /* RFProvider.h */,
+				B93D6F351C1DC1A00077D40C /* RFProvider.m */,
+				B93D6F371C1DC23A0077D40C /* RFRoute.h */,
+				B93D6F381C1DC23A0077D40C /* RFRoute.m */,
+				B93D6F3A1C1DC6260077D40C /* RFSegment.h */,
+				B93D6F3B1C1DC6260077D40C /* RFSegment.m */,
+				B93D6F431C1DD0AF0077D40C /* RFProperty.h */,
+				B93D6F441C1DD0AF0077D40C /* RFProperty.m */,
+				B93D6F461C1DD1A70077D40C /* RFCompany.h */,
+				B93D6F471C1DD1A70077D40C /* RFCompany.m */,
+				B93D6F401C1DC9CC0077D40C /* RFStop.h */,
+				B93D6F411C1DC9CC0077D40C /* RFStop.m */,
+				B93D6F3D1C1DC9040077D40C /* RFPrice.h */,
+				B93D6F3E1C1DC9040077D40C /* RFPrice.m */,
+				B973C6FA1C201D45006B15CA /* RFPolyline.h */,
+				B973C6FB1C201D45006B15CA /* RFPolyline.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B93D6F291C1DBF270077D40C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F4B1C1DD8770077D40C /* RFTransportManager.h */,
+				B93D6F4C1C1DD8770077D40C /* RFTransportManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B93D6F2A1C1DBF270077D40C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B93D6F2E1C1DC0C60077D40C /* RFStartViewController.h */,
+				B93D6F2F1C1DC0C60077D40C /* RFStartViewController.m */,
+				B973C7001C204CB0006B15CA /* RFMapDetailViewController.h */,
+				B973C7011C204CB0006B15CA /* RFMapDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB8A9D1F5EF2E25D656EBD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B973C6F31C201481006B15CA /* UIKit.framework */,
+				B973C6F11C20147B006B15CA /* CoreGraphics.framework */,
+				B973C6EF1C201476006B15CA /* QuartzCore.framework */,
+				B973C6ED1C201470006B15CA /* libxml2.tbd */,
+				B973C6EB1C201468006B15CA /* CoreImage.framework */,
+				B973C6E91C201463006B15CA /* CoreText.framework */,
+				B973C6E41C1F39CE006B15CA /* MapKit.framework */,
+				0FF0C7600205B588FB0431F1 /* libPods-TransitSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B93D6EE81C1DBEB10077D40C /* TransitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93D6F191C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSample" */;
+			buildPhases = (
+				42505FA3DBA4BE2B0E335536 /* Check Pods Manifest.lock */,
+				B93D6EE51C1DBEB10077D40C /* Sources */,
+				B93D6EE61C1DBEB10077D40C /* Frameworks */,
+				B93D6EE71C1DBEB10077D40C /* Resources */,
+				B93D7BA3DD72D34E7A9B4B05 /* Embed Pods Frameworks */,
+				58D57BAC99022F42D30FE6D7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitSample;
+			productName = TransitSample;
+			productReference = B93D6EE91C1DBEB10077D40C /* TransitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B93D6F041C1DBEB10077D40C /* TransitSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93D6F1C1C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSampleTests" */;
+			buildPhases = (
+				B93D6F011C1DBEB10077D40C /* Sources */,
+				B93D6F021C1DBEB10077D40C /* Frameworks */,
+				B93D6F031C1DBEB10077D40C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B93D6F071C1DBEB10077D40C /* PBXTargetDependency */,
+			);
+			name = TransitSampleTests;
+			productName = TransitSampleTests;
+			productReference = B93D6F051C1DBEB10077D40C /* TransitSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B93D6F0F1C1DBEB10077D40C /* TransitSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93D6F1F1C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSampleUITests" */;
+			buildPhases = (
+				B93D6F0C1C1DBEB10077D40C /* Sources */,
+				B93D6F0D1C1DBEB10077D40C /* Frameworks */,
+				B93D6F0E1C1DBEB10077D40C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B93D6F121C1DBEB10077D40C /* PBXTargetDependency */,
+			);
+			name = TransitSampleUITests;
+			productName = TransitSampleUITests;
+			productReference = B93D6F101C1DBEB10077D40C /* TransitSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B93D6EE11C1DBEB10077D40C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RF;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Roberto Ferraz";
+				TargetAttributes = {
+					B93D6EE81C1DBEB10077D40C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B93D6F041C1DBEB10077D40C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B93D6EE81C1DBEB10077D40C;
+					};
+					B93D6F0F1C1DBEB10077D40C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B93D6EE81C1DBEB10077D40C;
+					};
+				};
+			};
+			buildConfigurationList = B93D6EE41C1DBEB10077D40C /* Build configuration list for PBXProject "TransitSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B93D6EE01C1DBEB10077D40C;
+			productRefGroup = B93D6EEA1C1DBEB10077D40C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B93D6EE81C1DBEB10077D40C /* TransitSample */,
+				B93D6F041C1DBEB10077D40C /* TransitSampleTests */,
+				B93D6F0F1C1DBEB10077D40C /* TransitSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B93D6EE71C1DBEB10077D40C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D6EFF1C1DBEB10077D40C /* LaunchScreen.storyboard in Resources */,
+				B93D6EFC1C1DBEB10077D40C /* Assets.xcassets in Resources */,
+				B93D6EFA1C1DBEB10077D40C /* Main.storyboard in Resources */,
+				B93D6F4A1C1DD24C0077D40C /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F031C1DBEB10077D40C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F0E1C1DBEB10077D40C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42505FA3DBA4BE2B0E335536 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58D57BAC99022F42D30FE6D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitSample/Pods-TransitSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93D7BA3DD72D34E7A9B4B05 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitSample/Pods-TransitSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B93D6EE51C1DBEB10077D40C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D6F361C1DC1A00077D40C /* RFProvider.m in Sources */,
+				B93D6F3C1C1DC6260077D40C /* RFSegment.m in Sources */,
+				B973C7051C206196006B15CA /* RFRouteCell.m in Sources */,
+				B973C70B1C206659006B15CA /* NSString+Date.m in Sources */,
+				B9ADC1F41C22FFDA00BC639A /* NSDate+String.m in Sources */,
+				B973C7021C204CB0006B15CA /* RFMapDetailViewController.m in Sources */,
+				B973C6E81C20115D006B15CA /* NSString+PolylineDecoding.m in Sources */,
+				B973C6FC1C201D45006B15CA /* RFPolyline.m in Sources */,
+				B93D6EF11C1DBEB10077D40C /* AppDelegate.m in Sources */,
+				B93D6F331C1DC1740077D40C /* RFTransport.m in Sources */,
+				B93D6F521C1DD9980077D40C /* RFTrip.m in Sources */,
+				B9ADC2071C230DAD00BC639A /* RFTripHandler.m in Sources */,
+				B93D6F481C1DD1A70077D40C /* RFCompany.m in Sources */,
+				B93D6F421C1DC9CC0077D40C /* RFStop.m in Sources */,
+				B93D6F391C1DC23A0077D40C /* RFRoute.m in Sources */,
+				B93D6F451C1DD0AF0077D40C /* RFProperty.m in Sources */,
+				B93D6EEE1C1DBEB10077D40C /* main.m in Sources */,
+				B973C6FF1C20237F006B15CA /* RFSegment+Polyline.m in Sources */,
+				B93D6F551C1DDA020077D40C /* RFTrip+Routes.m in Sources */,
+				B9ADC2011C230B7600BC639A /* UIView+Constraints.m in Sources */,
+				B93D6F301C1DC0C60077D40C /* RFStartViewController.m in Sources */,
+				B973C6F91C2018B3006B15CA /* RFMapView.m in Sources */,
+				B9ADC1F91C23016F00BC639A /* RFRoutesDataSource.m in Sources */,
+				B93D6F3F1C1DC9040077D40C /* RFPrice.m in Sources */,
+				B973C6A41C1F2273006B15CA /* RFProviderAttribute.m in Sources */,
+				B93D6F4D1C1DD8770077D40C /* RFTransportManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F011C1DBEB10077D40C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D6F0A1C1DBEB10077D40C /* TransitSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D6F0C1C1DBEB10077D40C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D6F151C1DBEB10077D40C /* TransitSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B93D6F071C1DBEB10077D40C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B93D6EE81C1DBEB10077D40C /* TransitSample */;
+			targetProxy = B93D6F061C1DBEB10077D40C /* PBXContainerItemProxy */;
+		};
+		B93D6F121C1DBEB10077D40C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B93D6EE81C1DBEB10077D40C /* TransitSample */;
+			targetProxy = B93D6F111C1DBEB10077D40C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B93D6EF81C1DBEB10077D40C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B93D6EF91C1DBEB10077D40C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B93D6EFD1C1DBEB10077D40C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B93D6EFE1C1DBEB10077D40C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B93D6F171C1DBEB10077D40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B93D6F181C1DBEB10077D40C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B93D6F1A1C1DBEB10077D40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E2A845BB2CAD680206B94C /* Pods-TransitSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransitSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B93D6F1B1C1DBEB10077D40C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5E34C7993641AC3F94057C /* Pods-TransitSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransitSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B93D6F1D1C1DBEB10077D40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TransitSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitSample.app/TransitSample";
+			};
+			name = Debug;
+		};
+		B93D6F1E1C1DBEB10077D40C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TransitSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitSample.app/TransitSample";
+			};
+			name = Release;
+		};
+		B93D6F201C1DBEB10077D40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransitSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TransitSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B93D6F211C1DBEB10077D40C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransitSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RobertoFerraz.TransitSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TransitSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B93D6EE41C1DBEB10077D40C /* Build configuration list for PBXProject "TransitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93D6F171C1DBEB10077D40C /* Debug */,
+				B93D6F181C1DBEB10077D40C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93D6F191C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93D6F1A1C1DBEB10077D40C /* Debug */,
+				B93D6F1B1C1DBEB10077D40C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93D6F1C1C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93D6F1D1C1DBEB10077D40C /* Debug */,
+				B93D6F1E1C1DBEB10077D40C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93D6F1F1C1DBEB10077D40C /* Build configuration list for PBXNativeTarget "TransitSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93D6F201C1DBEB10077D40C /* Debug */,
+				B93D6F211C1DBEB10077D40C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B93D6EE11C1DBEB10077D40C /* Project object */;
+}

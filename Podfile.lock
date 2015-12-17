@@ -1,0 +1,37 @@
+PODS:
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - HexColors (3.0.0)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
+  - SVGKit (2.x):
+    - CocoaLumberjack (~> 2.x)
+
+DEPENDENCIES:
+  - HexColors
+  - Mantle
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`)
+
+EXTERNAL SOURCES:
+  SVGKit:
+    :git: https://github.com/SVGKit/SVGKit.git
+
+CHECKOUT OPTIONS:
+  SVGKit:
+    :commit: e5c304ce6f4729f1059a82b2f0ece0c6b630d9b2
+    :git: https://github.com/SVGKit/SVGKit.git
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  HexColors: 8b83e3fe90c0d466dae7b98c9d22da95799f99cb
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  SVGKit: 9c3f82b4405aca2dc4d9f307050ede8a6a92d052
+
+COCOAPODS: 0.39.0
